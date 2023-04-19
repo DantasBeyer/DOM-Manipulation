@@ -1,22 +1,27 @@
-//Dom Manipulation
+//DOM Manipoulation - Exercice 2 (Styling an Element)
 
-//getElementById()
-const title = document.getElementById('main-heading');
+const title = document.document.querySelector('#main-heading')
+//inline document.Styling
+title.style.color = 'green'; 
+
 console.log(title);
 
-//getElementByClassName()
-const items = document.getElementsByClassName('conteiner')
-console.log(items);
 
-//getElementsByTagName()
-const listItens = document.getElementsByTagName('li')
-console.log(listItens);
+const listItems = document.querySelectorAll('.list-items')
+// para criar um inline style de varios elementos Usando "querySelectorAll" 
+// é preciso fazer um "for loop" pelos itens.
+for (i = 0;i <  listItems.length; i++) {
+    listItems[i].style.color = 'red';
+}
+
+console.log(listItems);
 
 
-//querySelector() = if you have multiples tags/id/className etc.. querySelector select the first one that commes across.
-const query = document.querySelector('li')
-console.log(query);
 
-//querySelectorAll() = selects all the "divs" inside the HTML file 
-const queryAll = document.querySelectorAll('div')
-console.log(queryAll);
+// creating Elements 
+const ul = document.querySelector('ul');
+const newLi = document.createElement('li');
+
+
+// adding Elements 
+document.body.appendChild(li)
