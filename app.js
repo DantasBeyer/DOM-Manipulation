@@ -1,20 +1,18 @@
 // DOM Manipulation
 
-//Event Listeners
+// Reveal Event
 
-// element.addEventListner("click",function);
+const revealBtn = document.querySelector('.reveal-btn');
 
-const buttonTwo = document.querySelector('.btn-2');
+const hiddenContent = document.querySelector('.hidden-content');
 
-function alertBtm() {
-    alert('i olso love JS');
+function revealContent(){
+    if(hiddenContent.classList.contains('reveal-btn')
+    ){
+        hiddenContent.classList.remove('reveal-btn')
+    } else {
+        hiddenContent.classList.add('reveal-btn')
+    }
 }
-buttonTwo.addEventListener("click", alertBtm);
 
-//Mouseover
-
-const newBgColor = document.querySelector('.btn-3');
-function changeBkColor (){
-    newBgColor.style.backgroundColor = 'blue';
-}
-newBgColor.addEventListener('mouseover', changeBkColor)
+revealBtn.addEventListener('click', revealContent);
