@@ -1,18 +1,26 @@
-// DOM Manipulation
+// DOM Manipulation 
 
-// Reveal Event
+// Event Propagation
 
-const revealBtn = document.querySelector('.reveal-btn');
+window.addEventListener("click", function(){
+    console.log('Window');
+},true);
 
-const hiddenContent = document.querySelector('.hidden-content');
+document.addEventListener("click", function(){
+    console.log('Document');
+},true);
 
-function revealContent(){
-    if(hiddenContent.classList.contains('reveal-btn')
-    ){
-        hiddenContent.classList.remove('reveal-btn')
-    } else {
-        hiddenContent.classList.add('reveal-btn')
-    }
-}
 
-revealBtn.addEventListener('click', revealContent);
+document.querySelector('.div2').addEventListener("click", function(){
+    console.log("DIV 2");
+},true);
+
+document.querySelector('.div1').addEventListener("click", function(){
+    console.log("DIV 1");
+},true);
+
+
+// the (e) representes de event object
+document.querySelector('button').addEventListener('click', function(e){
+    console.log(e);
+},true)
