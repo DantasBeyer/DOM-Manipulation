@@ -1,5 +1,3 @@
-# DOM-Manipulation
-
 DOM Manipulation remainder
 <br>
 app1.js : Dom Manipulation - EXERCICE 1 (Selection Elements in the DOM)
@@ -14,7 +12,6 @@ getElementsByTagName(),
 querySelector() = if you have multiples tags/id/className etc.. querySelector select the first one that commes across.
 <br>
 querySelectorAll() = selects all the "divs" inside the HTML file 
-
 <br>
 <br>
 <br>
@@ -24,7 +21,7 @@ querySelectorAll() = selects all the "divs" inside the HTML file
 <br>
 <br>
 <br>
-app2.js : DOM Manipoulation - Exercice 2 (Styling an Element)
+app2.js = DOM Manipoulation - Exercice 2 (Styling an Element)
 
 <br>
 inline document.Styling
@@ -40,3 +37,56 @@ modifying the text : .innerText
 Modifying Attributes & Classes
 <br>
 Remove Elements : .remove()
+<br>
+<br>
+<br>
+<br>
+----------
+<br>
+<br>
+<br>
+<br>
+app3.js : Traverse the DOM
+<br>
+Parent Node Traversal 
+<br>
+Child Node Traversal
+<br>
+Subliming Node Traversal
+<br>
+<br>
+<br>
+<br>
+----------
+<br>
+<br>
+<br>
+<br>
+app4.js : Event Listeners
+<br>
+element.addEventListner("click",function);
+<br>
+Mouseover
+<br>
+<br>
+<br>
+<br>
+----------
+<br>
+<br>
+<br>
+<br>
+app5.js : Reveal Event
+<br>
+<br>
+<br>
+<br>
+----------
+<br>
+app6.js : Event Propagation
+<br>
+//to stop progagation you have to add a event object
+    /* e.stopPropagation() 
+    console.log(e);*/
+    <br>
+    the (e) representes de event object
