@@ -24,7 +24,7 @@ querySelectorAll() = selects all the "divs" inside the HTML file
 <br>
 <br>
 <br>
-app2.js = DOM Manipoulation - Exercice 2 (Styling an Element)
+app2.js : DOM Manipoulation - Exercice 2 (Styling an Element)
 
 <br>
 inline document.Styling
