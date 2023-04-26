@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+
+}
+
+body{
+    background: url(../img/Ayrton-Senna-Wallpaper-Free-Download.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+
+    height: 70px;
+    width: 250px;
+    border: 2px solid white;
+    background: none;
+    border-radius: 8px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+
+    font-size: 25px;
+    color: aliceblue;
+    
+}
+#open-btn:hover{
+    background-color: aliceblue;
+    color: black;
+    
+}
+
+
