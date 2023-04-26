@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url(img/Ayrton-Senna-Wallpaper-Free-Download.jpg)no-repeat center center/ cover;
+    gap: 20px;
+}
+header{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    border: 2px solid rgb(255, 255, 255);
+    width: 350px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(249, 249, 249);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    gap: 20px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow:  0 0 10px;
+}
+
+h3{
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+span{
+    text-transform: uppercase;
+    color: rgb(103, 27, 27);
+    font-size: 25px;
+}
+
+button{
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+    border-radius: 4px;
+
+    height: 40px;
+    width: 115px;
+
+}
+
+button:hover{
+    background-color: pink;
+}
+button:active{
+    background-color: lightblue;
+}
