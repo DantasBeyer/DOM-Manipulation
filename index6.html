@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image:linear-gradient(black,rgb(55, 65, 91)) 
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            padding: 25px;
+            border:  5px solid rgb(249, 244, 244);
+            color: aliceblue;
+            border-radius: 8px;
+            height: 400px;
+            width: 200px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+            border: 1px solid white;
+            height: 60px;
+            width: 200px;
+
+            font-size: 40px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <ul id="sports">
+        <li id="football">Football</li>
+        <li id="basketball">Basketball</li>
+        <li id="boxing">Boxing</li>
+        <li id="tennis">Tennis</li>
+        <li id="golf">Golf</li>
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>
