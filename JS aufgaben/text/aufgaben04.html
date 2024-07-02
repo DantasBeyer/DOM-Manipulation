@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+<!-- wie werden input-Felder ausgelesen? -->
+<input type="text" value="34" id="txt1">
+<script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+    // input-text-Feld auslesen und auf Konsole ausgeben
+    console.log(document.getElementById('txt1').value);
+    // in das input-text-Feld reinschreiben
+    document.getElementById('txt1').value = 'neu beschrieben';
+</script>
+
+</body>
+</html>

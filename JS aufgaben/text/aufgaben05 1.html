@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+
+  <body>
+    <!-- erstelle zwei input-text-Felder und einen Knopf
+    nach dem Knopf-klick sollen die Werte der input-Felder ausgelesen werden
+    und hintereinander in einem paragraph-Feld ausgegeben werden.
+    Benutze dazu eine Funktion.
+    Die input-text-Felder bekommen die labels Vorname und Nachname,
+    der Knopf hat die Aufschrift Gesamtname. -->
+
+    <label for="vorname">Vorname:</label>
+    <input type="text" id="vorname" name="vorname" />
+
+    <label for="nachname">Nachname:</label>
+    <input type="text" id="nachname" name="nachname" />
+
+    <button onclick="combineNames()">Gesamtname ausdrucken</button>
+
+    <p id="fullname"></p>
+
+    <script>
+      function combineNames() {
+        const vorname = document.getElementById("vorname").value;
+        const nachname = document.getElementById("nachname").value;
+        const fullname = vorname + " " + nachname;
+        document.getElementById("fullname").textContent = fullname;
+      }
+    </script>
+  </body>
+</html>
