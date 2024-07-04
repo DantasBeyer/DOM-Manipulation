@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Aufgabe
+Erstelle 2 input-Felder die Zahlen aufnehmen
+Erstelle einen Knopf, der die 2 Inhalte ausliest und addiert
+Gib das Ergebnis in einem p-Tag aus.
+-->
+<!-- dieselben beiden Felder benutzen, jedoch brauchen wir 4 Knöpfe:
+jeweils mit +, - , /, *
+Der jeweils angeklickte Knopf soll die passende Rechenoparation ausführen und in das p-tag reinschreiben
+-->
+<label>Zahl1<input id="number1" type="text"></label>
+<label>Zahl2<input id="number2" type="text"></label>
+<p>
+    <button type="button" onclick="calculate(this)">+</button>
+    <button type="button" onclick="calculate(this)">-</button>
+    <button type="button" onclick="calculate(this)">/</button>
+    <button type="button" onclick="calculate(this)">*</button>
+</p>
+<p id="ergebnis"></p>
+<script>
+
+    function getContentNumber(zahl) {
+        let idStr = '#number' + zahl;
+        return Number(document.querySelector(idStr).value);
+    }
+    function writeResult(ergebnis) {
+        document.querySelector('#ergebnis').innerHTML = ergebnis;
+    }
+
+    function calculate(element) {
+        let ergebnis;
+        let operator = element.innerHTML;
+
+        if (operator === '+') {
+            ergebnis = getContentNumber(1) + getContentNumber(2);
+        } else if (operator === '-') {
+            ergebnis = getContentNumber(1) - getContentNumber(2);
+        } else if (operator === '/') {
+            ergebnis = getContentNumber(1) / getContentNumber(2);
+            if (getContentNumber(2) === 0){
+                ergebnis = "Man darf nicht durch 0 teilen.";
+            }
+        } else if (operator === '*') {
+            ergebnis = getContentNumber(1) * getContentNumber(2);
+        } else {
+            ergebnis = "Es ist ein Fehler aufgetaucht";
+        }
+
+        writeResult(ergebnis);
+    }
+
+</script>
+</body>
+</html>
